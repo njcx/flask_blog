@@ -17,7 +17,7 @@ class DevelopmentConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'data-dev.sqlite')
 
 class ProductionConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'mysql://root:root@127.0.0.1/blogx'
+    SQLALCHEMY_DATABASE_URI = 'mysql://root:208512512@127.0.0.1/blogx'
 
     @classmethod
     def init_app(cls, app):
