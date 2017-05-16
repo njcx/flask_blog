@@ -13,6 +13,7 @@ db = SQLAlchemy()
 pagedown = PageDown()
 admin = Admin()
 login_mg = LoginManager()
+login_mg.session_protection = 'strong'
 
 
 def create_app(config_name):
